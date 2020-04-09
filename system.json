@@ -15,7 +15,7 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "C:\\Users\\tiz\\AppData\\Local\\FoundryVTT\\Data\\systems\\worldbuilding",
-  "manifest": "C:\\Users\\tiz\\AppData\\Local\\FoundryVTT\\Data\\systems\\worldbuilding\\system.json",
+  "url": "https://github.com/tkitv/gurps",
+  "manifest": "https://github.com/tkitv/gurps/blob/master/system.json",
   "download": "https://gitlab.com/foundrynet/worldbuilding/-/archive/master/worldbuilding-master.zip"
 }
