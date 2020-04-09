@@ -16,6 +16,6 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/tkitv/gurps",
-  "manifest": "https://github.com/tkitv/gurps/system.json",
+  "manifest": "https://github.com/tkitv/gurps/blob/master/system.json",
   "download": "https://github.com/tkitv/gurps/archive/master.zip"
 }
