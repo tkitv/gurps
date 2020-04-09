@@ -1,3 +1,3 @@
-# Simple Worldbuilding System
+# GURPS Worldbuilder
 
-A simple game system for Foundry VTT which allows for flexible definition of Actors and Items to assist with worldbuilding or for running games which do not have a more complete system implementation available.
+Hier entsteht unsere GUPRS Implementation für Foundry VTT (falls jemand den Schnauf dazu hat, was ich bezweifle...)
