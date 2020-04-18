@@ -57,8 +57,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.fp",
-  "minimumCoreVersion": "0.5.2",
-  "compatibleCoreVersion": "0.5.3",
+  "minimumCoreVersion": "0.5.5",
+  "compatibleCoreVersion": "0.5.5",
   "url": "https://github.com/tkitv/gurps",
   "manifest": "https://github.com/tkitv/gurps/raw/master/system.json",
   "download": "https://github.com/tkitv/gurps/-/archive/release-0.0.1/gurps-release-0.0.1.zip"
