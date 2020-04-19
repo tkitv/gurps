@@ -26,7 +26,8 @@ Hooks.once("init", async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("dnd5e", SimpleActorSheet, { makeDefault: true });
+  Actors.registerSheet("character", SimpleActorSheet, { makeDefault: true });
+  Actors.registerSheet("npc", SimpleActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("dnd5e", SimpleItemSheet, {makeDefault: true});
 });
