@@ -7,7 +7,7 @@ export class SimpleActorSheet extends ActorSheet {
   /** @override */
 	static get defaultOptions() {
 	  return mergeObject(super.defaultOptions, {
-  	  classes: ["gurps", "sheet", "actor"],
+  	  classes: ["worldbuilding", "sheet", "actor"],
   	  template: "systems/gurps/templates/actor-sheet.html",
       width: 600,
       height: 600,
