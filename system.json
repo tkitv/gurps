@@ -2,7 +2,7 @@
   "name": "gurps",
   "title": "Generic Universal RolePlaying System, 4th Edition",
   "description": "Run a game of GURPS in the Foundry VTT environment.",
-  "version": 0.08,
+  "version": 0.09,
   "author": "Opp, Bomba, Onkl",
   "minimumCoreVersion": "0.5.2",
   "compatibleCoreVersion": "0.5.5",
