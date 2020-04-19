@@ -1,10 +1,7 @@
 {
   "Actor": {
-    "types": [
-      "PC",
-      "NPC"
-    ],
-    "character": {
+    "types": ["PC", "NPC"],
+    "templates": {
       "pAttributes": {
         "ST": {
           "value": 10,
@@ -73,6 +70,12 @@
           "min": "1d-6",
           "max": "100d"
         }
+      },
+      "PC": {
+        "templates": ["pAttributes", "sAttributes"]
+      },
+      "NPC": {
+        "templates": ["pAttributes", "sAttributes"]
       },
       "Item": {
         "types": [
