@@ -11,14 +11,10 @@ export class SimpleActor extends Actor {
 
         // Re-map all attributes onto the base roll data
         if ( !!shorthand ) {
-            for ( let [k, v] of Object.entries(data.pAttributes) ) {
+            for ( let [k, v] of Object.entries(data.attributes) ) {
                 if ( !(k in data) ) data[k] = v.value;
             }
-            delete data.pAttributes;
-            for ( let [k, v] of Object.entries(data.sAttributes) ) {
-                if ( !(k in data) ) data[k] = v.value;
-            }
-            delete data.sAttributes;
+            delete data.attributes;
         }
 
         // Map all items data using their slugified names

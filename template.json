@@ -1,8 +1,21 @@
 {
   "Actor": {
-    "types": ["GURPS PC", "GURPS NPC"],
-    "templates": {
-      "pAttributes": {
+    "types": [
+      "character"
+    ],
+    "character": {
+      "biography": "",
+      "hitpoints": {
+        "value": 10,
+        "min": -999,
+        "max": 999
+      },
+      "fatiguepoints": {
+        "value": 10,
+        "min": -999,
+        "max": 999
+      },
+      "attributes": {
         "ST": {
           "value": 10,
           "min": 0,
@@ -22,9 +35,7 @@
           "value": 10,
           "min": 0,
           "max": 999
-        }
-      },
-      "sAttributes": {
+        },
         "HP": {
           "value": 10,
           "min": 1,
@@ -70,12 +81,18 @@
           "min": "1d-6",
           "max": "100d"
         }
-      },
-      "GURPS PC": {
-        "templates": ["pAttributes", "sAttributes"]
-      },
-      "GURPS NPC": {
-        "templates": ["pAttributes", "sAttributes"]
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "item"
+    ],
+    "item": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {
       }
     }
   }
