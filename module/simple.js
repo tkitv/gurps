@@ -26,8 +26,8 @@ Hooks.once("init", async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("character", SimpleActorSheet, { makeDefault: true });
-  Actors.registerSheet("npc", SimpleActorSheet, { makeDefault: true });
+  Actors.registerSheet("GURPS PC", SimpleActorSheet, { makeDefault: true });
+  Actors.registerSheet("GURPS NPC", SimpleActorSheet, { makeDefault: false });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("dnd5e", SimpleItemSheet, {makeDefault: true});
+  Items.registerSheet("GURPS", SimpleItemSheet, {makeDefault: true});
 });

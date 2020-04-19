@@ -76,17 +76,6 @@
       },
       "NPC": {
         "templates": ["pAttributes", "sAttributes"]
-      },
-      "Item": {
-        "types": [
-          "item"
-        ],
-        "item": {
-          "description": "",
-          "quantity": 1,
-          "weight": 0,
-          "attributes": {}
-        }
       }
     }
   }
