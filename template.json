@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["PC", "NPC"],
+    "types": ["GURPS PC", "GURPS NPC"],
     "templates": {
       "pAttributes": {
         "ST": {
@@ -71,10 +71,10 @@
           "max": "100d"
         }
       },
-      "PC": {
+      "GURPS PC": {
         "templates": ["pAttributes", "sAttributes"]
       },
-      "NPC": {
+      "GURPS NPC": {
         "templates": ["pAttributes", "sAttributes"]
       }
     }
