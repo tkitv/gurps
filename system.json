@@ -2,7 +2,7 @@
   "name": "GURPS",
   "title": "Generic Universal RolePlaying System, 4th Edition",
   "description": "Run a game of GURPS in the Foundry VTT environment.",
-  "version": 0.02,
+  "version": 0.03,
   "author": "Opp, Bomba, Onkl",
   "scripts": [],
   "esmodules": ["GURPS.js"],
@@ -52,7 +52,7 @@
     }
   ],
   "socket": true,
-  "initiative": "@SecondaryAttributeBSd",
+  "initiative": "@SecondaryAttributeBS",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "SecondaryAttributeHP",
