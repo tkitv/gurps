@@ -1,100 +1,28 @@
 {
-  "Actor": {
-    "types": [
-      "character"
-    ],
-    "character": {
-      "biography": "",
-      "hitpoints": {
-        "value": 10,
-        "min": -999,
-        "max": 999
-      },
-      "fatiguepoints": {
-        "value": 10,
-        "min": -999,
-        "max": 999
-      },
-      "attributes": {
-        "ST": {
-          "value": 10,
-          "min": 0,
-          "max": 999
-        },
-        "DX": {
-          "value": 10,
-          "min": 0,
-          "max": 999
-        },
-        "IQ": {
-          "value": 10,
-          "min": 0,
-          "max": 999
-        },
-        "HT": {
-          "value": 10,
-          "min": 0,
-          "max": 999
-        },
-        "HP": {
-          "value": 10,
-          "min": 1,
-          "max": 999
-        },
-        "Will": {
-          "value": 10,
-          "min": 1,
-          "max": 999
-        },
-        "Per": {
-          "value": 10,
-          "min": 1,
-          "max": 999
-        },
-        "FP": {
-          "value": 10,
-          "min": 0,
-          "max": 999
-        },
-        "BS": {
-          "value": 5,
-          "min": 0,
-          "max": 999
-        },
-        "BM": {
-          "value": 5,
-          "min": 0,
-          "max": 999
-        },
-        "BL": {
-          "value": 10,
-          "min": 1,
-          "max": 999
-        },
-        "Thrust": {
-          "value": "1d",
-          "min": "1d-6",
-          "max": "100d"
-        },
-        "Swing": {
-          "value": "1d",
-          "min": "1d-6",
-          "max": "100d"
-        }
-      }
-    }
-  },
-  "Item": {
-    "types": [
-      "item"
-    ],
-    "item": {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes": {
-      }
-    }
+"Actor": {
+  "types": ["character"],
+  "character": {
+    "biography": "",
+    "health": {
+      "value": 10,
+      "min": 0,
+      "max": 10
+    },
+    "fatigue": {
+      "value": 5,
+      "min": 0,
+      "max": 5
+    },
+    "attributes": {}
+  }
+},
+"Item": {
+  "types": ["item"],
+  "item": {
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "attributes": {}
   }
 }
-
+}

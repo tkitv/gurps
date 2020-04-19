@@ -15,14 +15,6 @@
                 <span> / </span>
                 <input type="text" name="data.power.max" value="{{data.power.max}}" data-dtype="Number"/>
             </div>
-            <div class="resource">
-                <span >
-                    DX
-                </span>
-                <input type="text" name="data.dx.value" value="{{data.dx.value}}" data-dtype="Number"/>
-                <span> / </span>
-                <input type="text" name="data.dx.max" value="{{data.dx.max}}" data-dtype="Number"/>
-            </div>
         </div>
     </header>
 
@@ -37,7 +29,7 @@
     <section class="sheet-body">
 
         {{!-- Biography Tab --}}
-        <div class="tab biography active" data-group="primary" data-tab="description">
+        <div class="tab biography" data-group="primary" data-tab="description">
             {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
         </div>
 

@@ -7,7 +7,7 @@ export class SimpleActorSheet extends ActorSheet {
   /** @override */
 	static get defaultOptions() {
 	  return mergeObject(super.defaultOptions, {
-  	  classes: ["worldbuilding", "sheet", "actor"],
+  	  classes: ["gurps", "sheet", "actor"],
   	  template: "systems/gurps/templates/actor-sheet.html",
       width: 600,
       height: 600,
@@ -21,7 +21,7 @@ export class SimpleActorSheet extends ActorSheet {
   getData() {
     const data = super.getData();
     data.dtypes = ["String", "Number", "Boolean"];
-    for ( let attr of Object.values(data.data.pAttributes) ) {
+    for ( let attr of Object.values(data.data.attributes) ) {
       attr.isCheckbox = attr.dtype === "Boolean";
     }
     return data;
@@ -32,14 +32,6 @@ export class SimpleActorSheet extends ActorSheet {
   /** @override */
 	activateListeners(html) {
     super.activateListeners(html);
-
-    // Activate tabs
-    let tabs = html.find('.tabs');
-    let initial = this._sheetTab;
-    new Tabs(tabs, {
-      initial: initial,
-      callback: clicked => this._sheetTab = clicked.data("tab")
-    });
 
     // Everything below here is only needed if the sheet is editable
     if (!this.options.editable) return;
@@ -60,6 +52,17 @@ export class SimpleActorSheet extends ActorSheet {
 
     // Add or Remove Attribute
     html.find(".attributes").on("click", ".attribute-control", this._onClickAttributeControl.bind(this));
+  }
+
+  /* -------------------------------------------- */
+
+  /** @override */
+  setPosition(options={}) {
+    const position = super.setPosition(options);
+    const sheetBody = this.element.find(".sheet-body");
+    const bodyHeight = position.height - 192;
+    sheetBody.css("height", bodyHeight);
+    return position;
   }
 
   /* -------------------------------------------- */

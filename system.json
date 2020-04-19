@@ -1,64 +1,20 @@
 {
-  "name": "GURPS",
+  "name": "gurps",
   "title": "Generic Universal RolePlaying System, 4th Edition",
   "description": "Run a game of GURPS in the Foundry VTT environment.",
   "version": 0.08,
   "author": "Opp, Bomba, Onkl",
-  "scripts": [],
-  "esmodules": ["GURPS.js"],
-  "styles": ["gurps.css"],
-  "packs": [
-    {
-      "name": "monsters",
-      "label": "Monsters",
-      "system": "gurps",
-      "path": "./packs/monsters.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "items",
-      "label": "Items",
-      "system": "gurps",
-      "path": "./packs/items.db",
-      "entity": "Item"
-    },
-    {
-      "name": "tradegoods",
-      "label": "Trade Goods",
-      "system": "gurps",
-      "path": "./packs/tradegoods.db",
-      "entity": "Item"
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "system": "gurps",
-      "path": "./packs/spells.db",
-      "entity": "Item"
-    },
-    {
-      "name": "templates",
-      "label": "Templates",
-      "system": "gurps",
-      "path": "./packs/templates.db",
-      "entity": "Item"
-    }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "socket": true,
-  "initiative": "@SecondaryAttributeBS",
+  "minimumCoreVersion": "0.5.2",
+  "compatibleCoreVersion": "0.5.5",
+  "templateVersion": 2,
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [],
   "gridDistance": 1,
   "gridUnits": "m",
-  "primaryTokenAttribute": "SecondaryAttributeHP",
-  "secondaryTokenAttribute": "SecondaryAttributeFP",
-  "minimumCoreVersion": "0.5.5",
-  "compatibleCoreVersion": "0.5.5",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "fatigue",
   "url": "https://github.com/tkitv/gurps",
   "manifest": "https://github.com/tkitv/gurps/raw/master/system.json",
   "download": "https://github.com/tkitv/gurps/archive/master.zip"
